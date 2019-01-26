@@ -12,6 +12,34 @@
 <!-- ALL OF YOUR SITE CODE HERE -->
     
     <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">GeekDojo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://www.geekdojo.io" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Members Area</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                      <a class="dropdown-item" href="https://geekdojo-io.slack.com">Slack</a>
+                    </div>
+                </li>  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Practice</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="/practice/bitwise_operator.html">Binary Calculator</a>
+                    <a class="dropdown-item" href="https://github.com/geekdojo-io/programming-challenges">Programming Challenges</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
@@ -35,6 +63,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
             <strong>GeekDojo</strong>
           </a>
+          <a href="#" class="navbar-item">
+            <strong>GeekDojo</strong>
+          </a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -65,7 +97,7 @@
                   <p class="card-text">Start with Scratch</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/scratch-programming">View lecture notes</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -79,7 +111,7 @@
                   <p class="card-text">Python Programming</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/python-programming">View lecture notes</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -93,7 +125,7 @@
                   <p class="card-text">JavaScript Programming</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/javascript-programming">View lecture notes</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -110,7 +142,7 @@
                   <p class="card-text">Web Programming I</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/web-programming">View lecture notes</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -124,7 +156,7 @@
                   <p class="card-text">Web Programming II</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/web-programming2">View lecture notes</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -138,7 +170,7 @@
                   <p class="card-text">Java Programming</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Coming soon...</button>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -155,7 +187,7 @@
                   <p class="card-text">C++ Programming</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Coming soon...</button>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
@@ -166,10 +198,10 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="http://d37rfi63g2olb3.cloudfront.net/wp-content/uploads/2018/02/09105553/algo_top.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Algorithm and Data Structure</p>
+                  <p class="card-text">Programming Challenges</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Github</button>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/geekdojo-io/programming-challenges">Challenge yourself</a>
                     </div>
                     <small class="text-muted">12 weeks</small>
                   </div>
