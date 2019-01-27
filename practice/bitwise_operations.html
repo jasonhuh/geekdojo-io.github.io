@@ -47,7 +47,7 @@
             <hr>
             <p class="mb-0">Correct answer: <span id="answer"></span></p>
             <hr>
-            <p class="mb-0">Explanation: <code><pre id="explanation"></pre></code></p>
+            <p class="mb-0">Explanation: <pre><code id="explanation"></code></pre></p>
         </div>            
 
         
@@ -123,6 +123,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <!-- ADDITIONAL JS HERE -->
     <script>
         var question = {
@@ -174,10 +175,10 @@
                 $("#alert").addClass("alert-warning");
                 $("#alert-title").text("Incorrect.");
             }
-            let txt = `\t${bin(question.a)} (${question.a})
-${question.op}\t${bin(question.b)} (${question.b})
+            let txt = `\t${bin(question.a)} (${question.a})  # Binary number ${bin(question.a)} is equal to decimal ${question.a}.
+${question.op}\t${bin(question.b)} (${question.b})  # Binary number ${bin(question.b)} is equal to decimal ${question.b}.
 \t________
-\t${bin(question.ans)} (${question.ans})`;
+\t${bin(question.ans)} (${question.ans})   # Binary number ${bin(question.ans)} is equal to decimal ${question.ans}.`;
             $("#my_response").text(response);
             $("#answer").text(question.ans);
             $("#explanation").text(txt);
