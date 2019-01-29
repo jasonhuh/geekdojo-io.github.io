@@ -72,6 +72,12 @@
 <!-- ADDITIONAL JS HERE -->
     <script>
         var questions = [
+            {date: '01/31/2019', title:'Life, the Universe, and Everything', url:'https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/life-the-universe-and-everything/', 
+                ed: 'https://github.com/geekdojo-io/programming-challenges/blob/master/01312019_life_universe_everything.py',
+                difficulty:'Easy', src:'Hackerearth'},            
+            {date: '01/30/2019', title:'Goki and his breakup', url:'https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/tds-and-his-breakup/', 
+                ed: 'https://github.com/geekdojo-io/programming-challenges/blob/master/01302019_goki_and_his_breakup.py',
+                difficulty:'Easy', src:'Hackerearth'},
             {date: '01/29/2019', title:'Aman & Mr.Sharma', url:'https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/aman-mrsharma/', 
                 ed: 'https://github.com/geekdojo-io/programming-challenges/blob/master/01292019_aman_mr_sharma.py',
                 difficulty:'Easy', src:'Hackerearth'},
@@ -140,8 +146,8 @@
         }
 
         $(document).ready(function(){
-            generateChallenges(questions.slice(0, 2), true);
-            generateChallenges(questions.slice(2, ), false);
+            generateChallenges(questions.slice(2, 4), true);
+            generateChallenges(questions.slice(4, ), false);
         });
     </script>
 
