@@ -1,4 +1,36 @@
 [
+   {
+      "date":"02/07/2019",
+      "title":"Seven-Segment Display",
+      "url":"https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/seven-segment-display-nov-easy-e7f87ce0/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02072019-seven-segment-display.py",
+      "difficulty":"Easy",
+      "src":"Hackerearth"
+   },            
+   {
+      "date":"02/06/2019",
+      "title":"Play with numbers",
+      "url":"https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/play-with-numbers-2/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02062019-play-with-numbers.py",
+      "difficulty":"Easy",
+      "src":"Hackerearth"
+   },         
+   {
+      "date":"02/05/2019",
+      "title":"Char Sum",
+      "url":"https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/char-sum-2d3a6ab5/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02052019-charsum.py",
+      "difficulty":"Easy",
+      "src":"Hackerearth"
+   },      
+   {
+      "date":"02/04/2019",
+      "title":"Ladderophilia",
+      "url":"https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/ladderophilia/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02042019-ladderophilla.py",
+      "difficulty":"Easy",
+      "src":"Hackerearth"
+   },   
     {
        "date":"01/31/2019",
        "title":"Life, the Universe, and Everything",

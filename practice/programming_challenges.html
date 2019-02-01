@@ -64,24 +64,43 @@
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <!-- ADDITIONAL JS HERE -->
     <script>
+
+        function days_between(date1, date2) {
+            const ONE_DAY = 1000 * 60 * 60 * 24;
+            return Math.round((date1.getTime() - date2.getTime())/ONE_DAY);
+        }
+
         function getProgrammingChallenges() {
+            const today = new Date();
             fetch('/data/programming_challenges.json')
             .then(function(response) {
                 return response.json();
             })
             .then(function(data) {
-                generateChallenges(data.slice(0, 4), true);
-                generateChallenges(data.slice(4), false);                
+                const NUM_QUESTION = 4;
+                generateChallenges(data, true, NUM_QUESTION, today);
+                generateChallenges(data, false, NUM_QUESTION, today);                
             })
             .catch(function(ex) {
                 console.error(ex);
             });
         }
 
-        function generateChallenges(ar, current) {
+        function generateChallenges(ar, current, num_q, today) {
             const tb = (current) ? '#currentChallengesTable' : '#pastChallengesTable';
             const ed = (current) ? '<i class="fas fa-info-circle"></i>' : '<i class="fas fa-eye"></i>';
+
             for (let i = 0; i < ar.length; i++) {
+                let d = new Date(ar[i].date);
+                const diff = days_between(today, d);
+                if (diff < 0) {
+                    continue;
+                } else if (current && diff > num_q - 1) {
+                    continue;
+                } else if (!current && diff <= num_q - 1) {
+                    continue;
+                }
+
                 $(tb).find('tbody')
                     .append($('<tr>')
                         .append($('<td>')
