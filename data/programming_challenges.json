@@ -1,5 +1,13 @@
 [
    {
+      "date":"02/12/2019",
+      "title":"Array Insert",
+      "url":"https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/array-insert/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02122019-array-insert.py",
+      "difficulty":"Very Easy",
+      "src":"Hackerearth"
+   },      
+   {
       "date":"02/11/2019",
       "title":"Gas Stations",
       "url":"https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/gas-stations-1/",
