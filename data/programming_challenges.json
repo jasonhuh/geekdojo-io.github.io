@@ -1,6 +1,14 @@
 [
 
    {
+      "date":"02/18/2019",
+      "title":"Psychic powers",
+      "url":"https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/psychic-powers/",
+      "ed":"https://github.com/geekdojo-io/programming-challenges/blob/master/02182019-psychic-powers.py",
+      "difficulty":"Very Easy",
+      "src":"Hackerearth"
+   },   
+   {
       "date":"02/14/2019",
       "title":"Hawkeye and Floodfill",
       "url":"https://www.hackerearth.com/practice/basic-programming/implementation/basics-of-implementation/practice-problems/algorithm/hawkeye-and-floodfill/",
