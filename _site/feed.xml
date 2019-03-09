@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-09T15:15:21-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GeekDojo</title><subtitle>Learn, Think, Solve</subtitle><entry><title type="html">Hello from 03/03/2019</title><link href="http://localhost:4000/hello/" rel="alternate" type="text/html" title="Hello from 03/03/2019" /><published>2019-03-04T00:00:00-08:00</published><updated>2019-03-04T00:00:00-08:00</updated><id>http://localhost:4000/hello</id><content type="html" xml:base="http://localhost:4000/hello/">&lt;p&gt;This is another test with MD.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-09T15:53:56-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GeekDojo</title><subtitle>Learn, Think, Solve</subtitle><entry><title type="html">Programming Challenges - Week 3 - Prep for Competition</title><link href="http://localhost:4000/prep-for-competition3/" rel="alternate" type="text/html" title="Programming Challenges - Week 3 - Prep for Competition" /><published>2019-03-09T00:00:00-08:00</published><updated>2019-03-09T00:00:00-08:00</updated><id>http://localhost:4000/prep-for-competition3</id><content type="html" xml:base="http://localhost:4000/prep-for-competition3/">&lt;h3 id=&quot;create-github-page-using-jekyell&quot;&gt;Create GitHub page using Jekyell&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;jekyll-now&lt;/a&gt;, and follow the &lt;em&gt;Quick Start&lt;/em&gt; step by step.&lt;/li&gt;
+  &lt;li&gt;Once your site is up and running, let’s create a new post by following the above guide.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;unit-testing&quot;&gt;Unit Testing&lt;/h3&gt;
+
+&lt;p&gt;Python has a built-in &lt;code class=&quot;highlighter-rouge&quot;&gt;UnitTest&lt;/code&gt; module, but it’s cumbersome to use. Let’s use &lt;code class=&quot;highlighter-rouge&quot;&gt;assert&lt;/code&gt; function instead. Using &lt;code class=&quot;highlighter-rouge&quot;&gt;assert&lt;/code&gt; function is quite simple. Here is an example:&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;simple_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__main__'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;simple_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The benefit of using &lt;code class=&quot;highlighter-rouge&quot;&gt;assert&lt;/code&gt; function is that, you can automate the unit testing. Instead of typing input manually, you can run the code, and testing is done for you.&lt;/p&gt;
+
+&lt;h3 id=&quot;programming-competition&quot;&gt;Programming Competition&lt;/h3&gt;
+
+&lt;p&gt;Some competitions requires to read input from a file and write output to a file.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/b9d3e8c7316c88696ececa817b708ae5.js&quot;&gt; &lt;/script&gt;</content><author><name></name></author><summary type="html">Create GitHub page using Jekyell</summary></entry><entry><title type="html">Hello from 03/03/2019</title><link href="http://localhost:4000/hello/" rel="alternate" type="text/html" title="Hello from 03/03/2019" /><published>2019-03-04T00:00:00-08:00</published><updated>2019-03-04T00:00:00-08:00</updated><id>http://localhost:4000/hello</id><content type="html" xml:base="http://localhost:4000/hello/">&lt;p&gt;This is another test with MD.&lt;/p&gt;
 
 &lt;h3 id=&quot;list-of-useful-sites&quot;&gt;List of useful sites&lt;/h3&gt;
 
