@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- ADDITIONAL STYLESHEET HERE -->
+    <title>Practice with Bitwise Operations</title>
+  </head>
+  <body>
+<!-- ALL OF YOUR SITE CODE HERE -->
+
+    <div class="container mt-4">
+          <p class="float-right">
+            <a href="/">Back to GeekDojo</a>
+          </p>
+        <h1>Practice with Bitwise Operations</h1>
+
+        <hr />
+        <h4 class="mt-4">Given two numbers, complete the following bitwise operation:</h4>
+        <div class="mt-3">      
+            <h4>
+                <span id="a" class="text-primary"></span> 
+                <span id="op" class="text-dark"></span> 
+                <span id="b" class="text-warning"></span> 
+            </h4>
+
+            <form id="main_form">
+                <div class="form-group">
+                    <label for="response" class="control-label">
+                    Provide answer:
+                    </label>
+                    <input id="response" class="form-control required" type="number" />
+                    <div class="invalid-feedback">
+                        Please provide answer.
+                    </div>
+                </div>
+                
+                <button id="mainButton" class="btn btn-primary" onclick='mainButtonClicked()' />
+            </form>                
+        </div>
+
+        <div id="alert" class="alert alert-success mt-4" role="alert">
+            <h4 class="alert-heading"><span id="alert-title"></span></h4>
+            <p>Your response: <span id="my_response"/></p>
+            <hr>
+            <p class="mb-0">Correct answer: <span id="answer"></span></p>
+            <hr>
+            <p class="mb-0">Explanation: <pre><code id="explanation"></code></pre></p>
+        </div>            
+
+        
+        <h4 class="mt-5"><i class="fas fa-book"></i>   Tips</h4>
+            <p class="mt-4">
+            Convert each number to binary number, apply a bitwise operation, and then
+            convert the binary result back to a decimal number.
+            </p>
+          <h5 class="mt-4"><i class="fas fa-caret-right"></i> Bitwise Operators</h5>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Explanation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold">&amp; (bitwise AND)</td>
+                  <td>1 if both are 1. Otherwise, 0.</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold"> | (bitwise OR)</td>
+                  <td>1 if any of them is 1. Otherwise, 0.</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold"> ^ (bitwise XOR)</td>
+                  <td>1 if both are different.</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold"> &lt;&lt; (Bitwise shift left)</td>
+                  <td>Shift bits to left side. Multiply by 2 on each shift.</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold"> &gt;&gt; (Bitwise shift right)</td>
+                  <td>Shift bits to right side. Divide by 2 on each shift.</td>
+                </tr>                
+              </tbody>
+            </table>
+          </div>
+
+          <h5 class="mt-4"><i class="fas fa-caret-right"></i> Decimal &lt;-&gt; Binary</h5>
+          <div class="table-responsive">
+            <table id="conversionTable" class="table table-striped table-sm">
+                <thead>
+                <tr>
+                    <th>Decimal</th>
+                    <th>Binary</th>
+                    <th>Decimal</th>
+                    <th>Binary</th>
+                </tr>      
+                </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>          
+
+    </div>
+
+    
+
+    <footer class="text-muted mt-5">
+      <div class="container">
+        <p class="float-right">
+          <a href="https://www.geekdojo.io">Back to GeekDojo.io</a>
+        </p>
+        <p>&copy; GeekDojo 2019</p>
+      </div>
+    </footer>
+
+<!-- ALL OF YOUR SITE CODE HERE -->    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<!-- ADDITIONAL JS HERE -->
+    <script>
+        var question = {
+            a: 0,
+            b: 0,
+            op: '',
+            ans: 0
+        };
+
+        function bin(num) {
+            return num.toString(2).padStart(8, '0')
+        }
+    
+        function randomNumber(lo, hi) {
+            return Math.floor(Math.random() * hi) + lo;
+        }
+
+        function randomChoice(arr) {
+            return arr[Math.floor(arr.length * Math.random())];
+        }
+
+        function mainButtonClicked() {
+            event.preventDefault();
+
+            const response = $("#response").val();
+            if (response.length === 0) {
+                alert('Provide answer');
+                return;
+            }
+
+            if ($("#mainButton").text() == "Check answer") {
+                $("#mainButton").text("Next question");
+                checkAnswer();
+            } else {
+                $("#mainButton").text("Check answer");
+                generateQuestion();
+            }
+        }
+
+        function checkAnswer() {
+            
+            const response = $("#response").val();
+            $("#alert").removeClass("alert-success");
+            $("#alert").removeClass("alert-warning");
+            if (parseInt(response) === question.ans) {
+                $("#alert").addClass("alert-success");
+                $("#alert-title").text("Well done!");
+            } else {
+                $("#alert").addClass("alert-warning");
+                $("#alert-title").text("Incorrect.");
+            }
+            let txt = `\t${bin(question.a)} (${question.a})  # Binary number ${bin(question.a)} is equal to decimal ${question.a}.
+${question.op}\t${bin(question.b)} (${question.b})  # Binary number ${bin(question.b)} is equal to decimal ${question.b}.
+\t________
+\t${bin(question.ans)} (${question.ans})   # Binary number ${bin(question.ans)} is equal to decimal ${question.ans}.`;
+            $("#my_response").text(response);
+            $("#answer").text(question.ans);
+            $("#explanation").text(txt);
+            $("#alert").show();
+        }
+
+        function generateQuestion() {
+            $("#alert").hide();
+            $("#mainButton").text("Check answer");
+            $("#response").val("");
+
+            let a = 0;
+            let b = 0;
+            let op = randomChoice(['&', '|', '^', '>>', '<<']);
+            if (op === '&' || op === '|' || op === '^') {
+                a = randomNumber(1, 32);
+                do {
+                    b = randomNumber(1, 32);
+                } while (a === b); // Avoid a and b are same number.
+            } else if (op === '<<' || op === '>>') {
+                a = randomNumber(1, 32);
+                b = randomNumber(1, 3);
+            }
+            if (a < b) {
+                let tmp = a;
+                a = b;
+                b = tmp;
+            }            
+            $("#a").text(a);
+            $("#op").text(op);
+            $("#b").text(b);
+
+            let ans = eval(`${a} ${op} ${b}`);
+            question = {a, b, op, ans };
+        }
+
+        function generateConversionTable() {
+            for (let i = 1; i <= 16; i++) {
+                $("#conversionTable").find('tbody')
+                    .append($('<tr>')
+                        .append($('<td class="font-weight-bold">')
+                            .append(i)
+                        )
+                        .append($('<td>')
+                            .append(bin(i))
+                        )
+                        .append($('<td class="font-weight-bold">')
+                            .append(i + 16)
+                        )
+                        .append($('<td>')
+                            .append(bin(i + 16))
+                        )                                                
+                    );
+                    
+            }
+        }
+
+        $(document).ready(function(){
+            generateConversionTable();
+            generateQuestion();
+        });
+    </script>
+
+
+  </body>
+</html>

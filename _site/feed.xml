@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-09T15:15:21-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GeekDojo</title><subtitle>Learn, Think, Solve</subtitle><entry><title type="html">Hello from 03/03/2019</title><link href="http://localhost:4000/hello/" rel="alternate" type="text/html" title="Hello from 03/03/2019" /><published>2019-03-04T00:00:00-08:00</published><updated>2019-03-04T00:00:00-08:00</updated><id>http://localhost:4000/hello</id><content type="html" xml:base="http://localhost:4000/hello/">&lt;p&gt;This is another test with MD.&lt;/p&gt;
+
+&lt;h3 id=&quot;list-of-useful-sites&quot;&gt;List of useful sites&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;www.google.com&lt;/li&gt;
+  &lt;li&gt;www.yahoo.com (JK)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">This is another test with MD.</summary></entry></feed>
