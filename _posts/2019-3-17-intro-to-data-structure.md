@@ -8,6 +8,11 @@ title: Programming Challenges - Week 4 - Review Competition Problems
 
 ### Data Structure and Algorithms
 
+#### Big O Notation
+
+The Big O (pronounced 'Oh') notation is used to classify algorithms according to how its running time or space requirements 
+grow as the input size grows (very big, like millions and billions).
+
 #### Data Structure
 
 - Primitive Types
@@ -19,6 +24,11 @@ title: Programming Challenges - Week 4 - Review Competition Problems
 - Graph
 
 #### Data Structure: Linked List
+
+Contiguous vs. Linked Data Structures
+
+- Contiguously allocated structures: arrays, heaps, and hash tables
+- Linked data structures: lists, trees, and graph adjacency lists
 
 ```py
 class Node:
