@@ -20,6 +20,48 @@ title: Programming Challenges - Week 4 - Review Competition Problems and Intro t
 The Big O (pronounced 'Oh') notation is used to classify algorithms according to how its running time or space requirements 
 grow as the input size grows (very big, like millions and billions).
 
+Let's try a Jupyter notebook. Here are key operations:
+- Press `Shift + Enter` to execute a cell.
+
+##### Loading a matplot libary
+
+Add the following code in the Jupyter notebook, and press `Shift + Enter`.
+
+```py
+%matplotlib inline
+import math
+import matplotlib.pyplot as plt
+```
+
+Add the following code on the second cell and press `Shift + Enter`.
+
+```py
+N = 1000000 # 1 billion
+```
+
+Add the rest of the code and the third cell and press `Shift + Enter`.
+
+```py
+a = [i for i in range(1, N)]  # O(N)
+b = [i*i for i in range(N)] # O(N^2)
+c = [math.log(i) for i in range(100, N)] # O(log(N))
+d = [i * math.log(i) for i in range(100, N)] # O(N*log(N))
+plt.ylabel('Time')
+plt.xlabel('Size of input')
+plot_a, = plt.plot(a, color='blue', label='O(N)')
+plot_b, = plt.plot(b, color='red', label='O(N^2)')
+plot_c, = plt.plot(c, color='purple', label='O(log(N))')
+plot_d, = plt.plot(d, color='green',  label='O(N*log(N))')
+plt.legend(handles=[plot_a, plot_b, plot_c, plot_d], loc=1)
+plt.show()
+```
+
+Here are the results. The higher the time (y-axis), the slower the runtime is.
+
+![Big O](/images/big_o_1.jpg)
+
+![Big O](/images/big_o_2.jpg)
+
 #### Data Structure
 
 - Primitive Types
