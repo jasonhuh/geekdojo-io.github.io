@@ -21,6 +21,7 @@ grow as the input size grows (very big, like millions and billions).
 - Hash Table (Dictionary)
 - Stack and Queue
 - Tree
+- Heap
 - Graph
 
 #### Data Structure: Linked List
