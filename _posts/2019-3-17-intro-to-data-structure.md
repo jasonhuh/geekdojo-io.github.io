@@ -7,6 +7,12 @@ title: Programming Challenges - Week 4 - Review Competition Problems
 
 - Teamscode - Spring 2019 MIHS
 
+### Practice blogging
+
+- Create a new blog
+- Review Markdown
+- Add image
+
 ### Data Structure and Algorithms
 
 #### Big O Notation
