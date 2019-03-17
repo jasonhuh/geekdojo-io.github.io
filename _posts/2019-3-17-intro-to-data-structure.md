@@ -40,50 +40,131 @@ Contiguous vs. Linked Data Structures
 
 ```py
 class Node:
-    def __init__(self, data):
+    """
+    Node for Linked List
+    """
+    def __init__(self, data: int):
         self.data = data
         self.next = None
         
 head = Node(1)
-head.next = Node(2)
-head.next.next = Node(3)
+assert head.data == 1
 ```
 
 ##### Linked List: Insert
 
 ```py
-def insert(head, data):
+def insert(node, data: int):
+    """
+    Insertion at the beginning to avoid
+    traversing the list
+    """
     tmp = Node(data)
-    tmp.next = head.next
-    head = tmp
+    tmp.next = node
+    node = tmp
+    return node
+
+head = Node(1)
+assert head.data == 1
+
+head = insert(head, 2)
+assert head.data == 2
+assert head.next.data == 1    
 ```
 
-##### Linked List: Search
+##### Linked List: Find
+
+There are two ways to implement the `find` method -- recursively or iteratively. In either case, 
+it takes *O(N)* time to find an item in a linked list.
 
 ```py
-def search(head, data):
+# Recursive find
+def find_recursive(node, data):
+    """
+    Recursively traverse the list and
+    return a node when its data mathes a provided data
+    """
+    if node is None:
+        return
+    if node.data == data:
+        return node
+    return find_recursive(node.next, data)
+```
+
+```py
+def find(head, data):
+    """
+    Find a node iteratively for a provided data
+    """
     tmp = head
     while tmp:
         if tmp.data == data:
             break
         tmp = tmp.next
     return tmp
+
+head = Node(1)
+assert head.data == 1
+
+head = insert(head, 2)
+assert head.data == 2
+assert head.next.data == 1
+
+head = insert(head, 3)
+print_list(head)
+
+assert find(head, 7) == None
+assert find(head, 3) == head
+assert find(head, 2) == head.next    
 ```
 
 ##### Linked List: Delete
 
+Deletion is more complicated than other operations. First, we need to find a pointer to the predecessor of 
+the item to be deleted. 
+
 ```py
-def delete(node_to_delete):
-    node_to_delete.data = node_to_delete.next.data
-    node_to_delete.next = node_to_delete.next.next
+def find_predecessor(node, data):
+    """
+    Find a predecessor of a node of which data matches a provided data
+    """
+    if node is None or node.next is None:
+        return
+    if node.next.data == data:
+        return node
+    else:
+        return find_predecessor(node.next, data)
+```        
+
+We needed the predecessor so that its _next_ pointer must be changed.
+
+```py
+def delete(head, data):
+    """
+    Deleting a node requires a pointer to a predecessor
+    """
+    cur = find_recursive(head, data)
+    if cur:
+        pred = find_predecessor(head, data)
+        if pred is None:
+             head = cur.next
+        else:
+            pred.next = cur.next
+    return head
 ```
 
 ##### Linked List: Print all nodes
 
 ```py
-def print_linked_list(head):
-    tmp = head
-    while tmp:
-        print(tmp.data, end=' ')
-        tmp = tmp.next
+def print_list(node):
+    """
+    Recursively traverse the list and
+    print data
+    """
+    if node is None:
+        return
+    print(node.data, end=' ')
+    print_list(node.next)
 ```
+
+{% gist 69634f61bd4234214893a38746934a96 %}
