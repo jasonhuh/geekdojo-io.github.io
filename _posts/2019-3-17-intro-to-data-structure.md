@@ -219,4 +219,6 @@ Here is the code for the above operations of a linked list.
 
 ##### Summary
 
+We learned the basic concept of Big O notation, and studied the characteristics of different running time using Jupyter Notebook (which is way cool!). 
+
 Linked List is a our first step to learn a linked data structure that is different from a contiguous data structure such as an array. The concept and techniques learend in Linked List are the building blocks for other data structure such as lists, trees and graphs.
