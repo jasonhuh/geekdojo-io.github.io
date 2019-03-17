@@ -60,6 +60,7 @@ def search(head, data):
             break
         tmp = tmp.next
     return tmp
+```
 
 ##### Linked List: Delete
 
