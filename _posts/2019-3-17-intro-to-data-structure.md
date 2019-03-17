@@ -58,9 +58,9 @@ plt.show()
 
 Here are the results. The higher the time (y-axis), the slower the runtime is.
 
-![Big O](/images/big_o_1.jpg)
+![Big O](/images/big_o_1.png)
 
-![Big O](/images/big_o_2.jpg)
+![Big O](/images/big_o_2.png)
 
 #### Data Structure
 
