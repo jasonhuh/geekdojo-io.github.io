@@ -31,6 +31,8 @@ grow as the input size grows (very big, like millions and billions).
 - Heap
 - Graph
 
+![Array vs. Linked List, Trees and Graphs](/images/data_structure_overview.jpg)
+
 #### Data Structure: Linked List
 
 Contiguous vs. Linked Data Structures
