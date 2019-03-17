@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programming Challenges - Week 4 - Review Competition Problems
+title: Programming Challenges - Week 4 - Review Competition Problems and Intro to Data Structure
 ---
 
 ### Review problems
