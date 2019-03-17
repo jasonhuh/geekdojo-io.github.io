@@ -36,7 +36,7 @@ import matplotlib.pyplot as plt
 Add the following code on the second cell and press `Shift + Enter`.
 
 ```py
-N = 1000000 # 1 billion
+N = 1000000 # 1 million
 ```
 
 Add the rest of the code and the third cell and press `Shift + Enter`.
