@@ -7,7 +7,7 @@ title: Programming Challenges - Week 4 - Review Competition Problems and Intro t
 
 - Homework (Hackeerank)
 
-![one way to solve circular array](hr-circular-array-rotation.png)
+![one way to solve circular array](/images/hr-circular-array-rotation.png)
 
 ### Practice blogging
 
