@@ -218,7 +218,19 @@ def print_list(node):
 Here is the code for the above operations of a linked list.
 {% gist 69634f61bd4234214893a38746934a96 %}
 
-##### Practice (TBD)
+##### Practice
+
+1. Write a function return the length of a linked list.
+```py
+def length_of_list(head):
+    pass
+```
+2. Write a function to determin if a linked list contains a duplicate value
+```py
+def has_duplicate(head):
+    pass
+```
+
 
 ##### Summary
 
