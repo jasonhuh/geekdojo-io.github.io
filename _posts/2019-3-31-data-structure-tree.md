@@ -9,6 +9,7 @@ title: Programming Challenges - Week 5 - Data Structure - Linked List (Cont.) an
 - https://github.com/geekdojo-io/python-programming/tree/master/lecture11
 
 #### Homework (Hackeerank)
+- https://www.hackerrank.com/challenges/strong-password/problem
 - Modular programming
 
 #### Object-Oriented Programming
