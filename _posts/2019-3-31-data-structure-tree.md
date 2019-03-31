@@ -189,7 +189,23 @@ def traverse(node):
 
 #### Practice
 
-TBD
+1. Create a following binary tree, and perform inorder traversal, postorder traversal and preorder traversal.
 
+<pre>
+        50
+      /   \
+     30     70
+   /   \     \
+  15    20     80
+   \           /  \
+    18       75    90 
+</pre>
 
+#### Homework
+1. Create a blog post on the introduction to a tree data structure. Your blog post needs to cover the following at minimum:
+    * Binary Tree
+    * Binary Search Tree
+    * How to traverse through tree
+2. Hackerrank problem: Caesar Cipher - https://www.hackerrank.com/challenges/caesar-cipher-1/problem
 
+#### Next week - Mock Competition
