@@ -189,7 +189,7 @@ def traverse(node):
 
 #### Practice
 
-1. Create a following binary tree, and perform inorder traversal, postorder traversal and preorder traversal.
+1. Create a following binary search tree, and perform inorder traversal, postorder traversal and preorder traversal.
 
 <pre>
         50
