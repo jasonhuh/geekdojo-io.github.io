@@ -3,10 +3,18 @@ layout: post
 title: Programming Challenges - Week 5 - Data Structure - Linked List (Cont.) and Tree
 ---
 
-## Review problems
+## Review
+
+#### How to be a good programmer
+- https://github.com/geekdojo-io/python-programming/tree/master/lecture11
 
 #### Homework (Hackeerank)
 - Modular programming
+
+#### Object-Oriented Programming
+- https://docs.google.com/presentation/d/1FUcFb78FCY9WI3JxZdZJAR-JmhqIJ4gZu3GnRlptivg/edit#slide=id.g2b82a1f2b4_0_8
+- https://github.com/geekdojo-io/python-programming/tree/master/lecture4
+- https://github.com/geekdojo-io/python-programming/tree/master/lecture5
 
 ## Linked List
 
@@ -145,4 +153,42 @@ traverse(root)
 The above technique is called `Inorder Traversal`, and the tree is called `Binary Search Tree` 
 where the left subtree of a node contains only nodes with keys smaller than the node's key, and the right subtree of
 a node contains nodes with keys bigger than the node's key.
+
+Depending on when to process (in our case, `print`), there are three types of traversal -- `Preorder`, `Inorder` and `Postorder`.
+
+```
+# Preorder traversal
+def traverse(node):
+    if not node:
+        return
+    print(node.val)        
+    traverse(node.left)
+    traverse(node.right)
+```
+
+```
+# Ineorder traversal
+def traverse(node):
+    if not node:
+        return
+    traverse(node.left)
+    print(node.val)            
+    traverse(node.right)
+```
+
+```
+# Postorder traversal
+def traverse(node):
+    if not node:
+        return
+    traverse(node.left)
+    traverse(node.right)
+    print(node.val)
+```
+
+#### Practice
+
+TBD
+
+
 
