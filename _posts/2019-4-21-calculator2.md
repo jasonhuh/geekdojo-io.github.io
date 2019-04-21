@@ -31,6 +31,11 @@ sol = Solution()
 assert sol.isUnique('abc') == True
 assert sol.isUnique('abcda') == False
 ```
+## Concept - Hashtable / Dictionary
+
+### Exercise
+
+- Ransom Note: https://www.hackerrank.com/challenges/ctci-ransom-note/problem 
 
 ## Nano Project - Calculator (Cont.)
 
