@@ -13,8 +13,8 @@ title: Lecture Note for April 21, 2019 - Calculator Project (Cont.)
 
 #### Tips on solving problems
 
-* Read a problem statement twice
-* Measure twice, cut once!
+* Read a problem statement twice! (Don't solve a wrong problem!)
+* Measure twice, cut once! (Write a concrete example on a paper, write an algorithm or peusdo-code, and test the algorithm before starting to write code)
 * After solving a problem, study Editorial and view solutions in Discussion.
 * Upsolve - Don't waste time solving easy problems. Challenge yourself.
 
