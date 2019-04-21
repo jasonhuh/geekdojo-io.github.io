@@ -23,7 +23,7 @@ title: Lecture Note for April 21, 2019 - Calculator Project (Cont.)
 ```py
 class Solution:
     def isUnique(self, s: str) -> bool:
-		# TODO: Determin if a string has all unique characters.
+	# TODO: Determin if a string has all unique characters.
         pass
 
 
