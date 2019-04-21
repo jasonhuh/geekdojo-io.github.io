@@ -31,7 +31,34 @@ sol = Solution()
 assert sol.isUnique('abc') == True
 assert sol.isUnique('abcda') == False
 ```
-## Concept - Hashtable / Dictionary
+## Technique - Hashtable / Dictionary
+
+### Using built-in dictionary
+
+```py
+counter = {}
+if c not in s:
+    counter[a] = 1
+else:
+    counter[a] += 1
+```
+
+### Using `defaultdict`
+
+```py
+from collections import defaultdict
+
+counter = defaultdict(int)
+counter[a] += 1
+```
+### Using `Counter` class
+
+```py
+from collections import Counter
+
+counter = Counter()
+counter[a] += 1
+```
 
 ### Exercise
 
